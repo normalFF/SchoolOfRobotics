@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
+    <PackageReference Include="Quartz.Extensions.Hosting" Version="3.6.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SchoolOfRobotics.Contracts\SchoolOfRobotics.Contracts.csproj" />
+    <ProjectReference Include="..\SchoolOfRobotics.Application\SchoolOfRobotics.Application.csproj" />
+    <ProjectReference Include="..\SchoolOfRobotics.Infrastructure\SchoolOfRobotics.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

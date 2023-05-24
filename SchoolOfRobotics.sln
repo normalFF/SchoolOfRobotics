@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolOfRobotics.Api", "SchoolOfRobotics.Api\SchoolOfRobotics.Api.csproj", "{CD4C3688-36A3-4261-802C-AA7A0355192E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolOfRobotics.Application", "SchoolOfRobotics.Application\SchoolOfRobotics.Application.csproj", "{3B64C513-985A-4119-A24E-C8B49357A97F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolOfRobotics.Contracts", "SchoolOfRobotics.Contracts\SchoolOfRobotics.Contracts.csproj", "{B73F68FA-ECBC-4929-AA32-E79C075B7702}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolOfRobotics.Domain", "SchoolOfRobotics.Domain\SchoolOfRobotics.Domain.csproj", "{E15D680D-2E58-4C85-8814-67482CE12AD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolOfRobotics.Infrastructure", "SchoolOfRobotics.Infrastructure\SchoolOfRobotics.Infrastructure.csproj", "{9D264D10-3DCB-450C-86B1-751D954E5666}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD4C3688-36A3-4261-802C-AA7A0355192E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD4C3688-36A3-4261-802C-AA7A0355192E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD4C3688-36A3-4261-802C-AA7A0355192E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD4C3688-36A3-4261-802C-AA7A0355192E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B64C513-985A-4119-A24E-C8B49357A97F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B64C513-985A-4119-A24E-C8B49357A97F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B64C513-985A-4119-A24E-C8B49357A97F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B64C513-985A-4119-A24E-C8B49357A97F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B73F68FA-ECBC-4929-AA32-E79C075B7702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B73F68FA-ECBC-4929-AA32-E79C075B7702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B73F68FA-ECBC-4929-AA32-E79C075B7702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B73F68FA-ECBC-4929-AA32-E79C075B7702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E15D680D-2E58-4C85-8814-67482CE12AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E15D680D-2E58-4C85-8814-67482CE12AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E15D680D-2E58-4C85-8814-67482CE12AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E15D680D-2E58-4C85-8814-67482CE12AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D264D10-3DCB-450C-86B1-751D954E5666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D264D10-3DCB-450C-86B1-751D954E5666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D264D10-3DCB-450C-86B1-751D954E5666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D264D10-3DCB-450C-86B1-751D954E5666}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E04F0EB4-2B01-4C1B-92ED-25DA6721B422}
+	EndGlobalSection
+EndGlobal
