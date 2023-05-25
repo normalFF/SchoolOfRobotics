@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using SchoolOfRobotics.Application.Commands.CreateCourse;
 using SchoolOfRobotics.Application.Commands.CreateGroup;
 using SchoolOfRobotics.Application.Commands.SetCourseStatus;
+using SchoolOfRobotics.Application.Commands.TeacherRegistration;
 using SchoolOfRobotics.Contracts.Models.Requests;
 using SchoolOfRobotics.Contracts.Models.Responces;
 using SchoolOfRobotics.Domain.Enums;
@@ -40,5 +41,12 @@ public class AdminController : ApiController
 		var command = _mapper.Map<SetCourseStatusCommand>(request);
 		var responce = await _sender.Send(command, cancellationToken);
 		return responce.IsSuccess ? Ok(_mapper.Map<SetCourseStatusResponce>(responce.Value)) : Problem(responce.Error);
+	}
+
+	public async Task<IActionResult> TeacherRegistration([FromBody] TeacherRegistrationRequest request, CancellationToken cancellationToken)
+	{
+		var command = _mapper.Map<TeacherRegistrationCommand>(request);
+		var responce = await _sender.Send(command, cancellationToken);
+		return responce.IsSuccess ? Ok() : Problem(responce.Error);
 	}
 }

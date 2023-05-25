@@ -2,6 +2,7 @@
 using SchoolOfRobotics.Application.Commands.CreateCourse;
 using SchoolOfRobotics.Application.Commands.CreateGroup;
 using SchoolOfRobotics.Application.Commands.SetCourseStatus;
+using SchoolOfRobotics.Application.Commands.TeacherRegistration;
 using SchoolOfRobotics.Contracts.Models.Requests;
 using SchoolOfRobotics.Contracts.Models.Responces;
 
@@ -38,5 +39,12 @@ public class AdminControllerModelsMappingConfig : IRegister
 
 		config.NewConfig<SetCourseStatusCommandResponce, SetCourseStatusResponce>()
 			.Map(dest => dest.StatusValue, opt => opt.StatusValue);
+
+		config.NewConfig<TeacherRegistrationRequest, TeacherRegistrationCommand>()
+			.Map(dest => dest.Email, opt => opt.Email)
+			.Map(dest => dest.FirstName, opt => opt.FirstName)
+			.Map(dest => dest.LastName, opt => opt.LastName)
+			.Map(dest => dest.Patronymic, opt => opt.Patronymic)
+			.Map(dest => dest.Password, opt => opt.Password);
 	}
 }
