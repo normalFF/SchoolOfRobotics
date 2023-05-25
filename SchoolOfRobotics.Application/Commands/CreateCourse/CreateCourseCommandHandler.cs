@@ -2,6 +2,7 @@
 using SchoolOfRobotics.Application.Abstractions.Repositories;
 using SchoolOfRobotics.Application.Abstractions.Services;
 using SchoolOfRobotics.Domain.Courses.Aggregates;
+using SchoolOfRobotics.Domain.Courses.ValueObjects;
 using SchoolOfRobotics.Domain.Errors;
 using SchoolOfRobotics.Domain.Primitives.Results;
 
@@ -20,24 +21,33 @@ public class CreateCourseCommandHandler : ICommandHandler<CreateCourseCommand, C
 
 	public async Task<Result<CreateCourseCommandResponce>> Handle(CreateCourseCommand request, CancellationToken cancellationToken)
 	{
-		var checkResult = await _courseRepository.CheckCourseNameAsync(request.CourseName, cancellationToken);
+		var createResult = CourseName.Create(request.CourseName);
 
-		if (checkResult)
+		if (createResult.IsFailure)
 		{
-			return Errors.Course.CourseNameAlreabyExist;
+			return createResult.Error;
 		}
 		else
 		{
-			var newCourse = Course.Create(request.CourseName, request.CourseDescription);
-			if (newCourse.IsFailure)
+			var checkResult = await _courseRepository.CheckCourseNameAsync(createResult.Value, cancellationToken);
+
+			if (checkResult)
 			{
-				return newCourse.Error;
+				return Errors.Course.CourseNameAlreabyExist;
 			}
 			else
 			{
-				await _courseRepository.AddCourseAsync(newCourse.Value, cancellationToken);
-				await _unitOfWork.SaveChangesAsync(cancellationToken);
-				return new CreateCourseCommandResponce(newCourse.Value.Id);
+				var newCourse = Course.Create(request.CourseName, request.CourseDescription);
+				if (newCourse.IsFailure)
+				{
+					return newCourse.Error;
+				}
+				else
+				{
+					_courseRepository.AddCourse(newCourse.Value);
+					await _unitOfWork.SaveChangesAsync(cancellationToken);
+					return new CreateCourseCommandResponce(newCourse.Value.Id);
+				}
 			}
 		}
 	}
