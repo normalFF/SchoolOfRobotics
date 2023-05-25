@@ -45,7 +45,6 @@ builder.Services.ConfigureOptions<JwtBearerOptionsSetup>();
 builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 builder.Services.AddControllers().AddApplicationPart(typeof(AssemblyReference).Assembly);
 
-builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
