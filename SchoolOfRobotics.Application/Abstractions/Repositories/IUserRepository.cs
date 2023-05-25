@@ -10,6 +10,6 @@ namespace SchoolOfRobotics.Application.Abstractions.Repositories
 
 		Task<User?> GetUserByEmailAsync(Email email, CancellationToken cancellationToken);
 
-		Task CreateUserAsync(User user, CancellationToken cancellationToken);
+		void CreateUser(User user);
 	}
 }

@@ -52,7 +52,7 @@ public class ParentRegistrationHandler : ICommandHandler<ParentRegistrationComma
 				if (newUser.IsFailure) return newUser.Error;
 				else
 				{
-					await _userRepository.CreateUserAsync(newUser.Value, cancellationToken);
+					_userRepository.CreateUser(newUser.Value);
 					await _unitOfWork.SaveChangesAsync(cancellationToken);
 					return Result.Success();
 				}
