@@ -49,7 +49,7 @@ public class CreateGroupCommandHandler : ICommandHandler<CreateGroupCommand, Cre
 			}
 			else
 			{
-				await _groupRepository.AddGroupAsync(newGroup.Value, cancellationToken);
+				_groupRepository.AddGroup(newGroup.Value);
 				await _unitOfWork.SaveChangesAsync(cancellationToken);
 				return new CreateGroupCommandResponce(newGroup.Value.Id);
 			}

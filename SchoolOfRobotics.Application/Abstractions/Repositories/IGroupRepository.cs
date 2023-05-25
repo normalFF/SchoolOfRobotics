@@ -5,7 +5,7 @@ namespace SchoolOfRobotics.Application.Abstractions.Repositories
 {
 	public interface IGroupRepository
 	{
-		Task AddGroupAsync(Group group, CancellationToken cancellationToken);
+		void AddGroup(Group group);
 
 		Task<Group?> GetGroupByIdAsync(GroupId group, CancellationToken cancellationToken);
 	}
