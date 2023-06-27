@@ -1,12 +1,12 @@
 ﻿using Newtonsoft.Json;
 using SchoolOfRobotics.Application.Abstractions.Services;
-using SchoolOfRobotics.Domain.OutBoxMessages.Entities;
+using SchoolOfRobotics.Domain.OutBoxMessages;
 using SchoolOfRobotics.Domain.Primitives;
 using SchoolOfRobotics.Infrastructure.Context;
 
 namespace SchoolOfRobotics.Infrastructure.Persistence
 {
-	internal class UnitOfWork : IUnitOfWork
+    internal class UnitOfWork : IUnitOfWork
 	{
 		private readonly ApplicationDbContext _dbContext;
 

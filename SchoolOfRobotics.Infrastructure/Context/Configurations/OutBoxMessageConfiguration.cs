@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SchoolOfRobotics.Domain.OutBoxMessages.Entities;
+using SchoolOfRobotics.Domain.OutBoxMessages;
 using System.Security.Cryptography.X509Certificates;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class OutBoxMessageConfiguration : IEntityTypeConfiguration<OutBoxMessage>
+    internal class OutBoxMessageConfiguration : IEntityTypeConfiguration<OutBoxMessage>
 	{
 		public void Configure(EntityTypeBuilder<OutBoxMessage> builder)
 		{

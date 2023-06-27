@@ -2,13 +2,13 @@
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using Quartz;
-using SchoolOfRobotics.Domain.OutBoxMessages.Entities;
+using SchoolOfRobotics.Domain.OutBoxMessages;
 using SchoolOfRobotics.Domain.Primitives;
 using SchoolOfRobotics.Infrastructure.Context;
 
 namespace SchoolOfRobotics.Infrastructure.BackgroundProcess
 {
-	[DisallowConcurrentExecution]
+    [DisallowConcurrentExecution]
 	public class ProcessOutBoxMessages : IJob
 	{
 		private readonly ApplicationDbContext _context;
