@@ -1,8 +1,7 @@
 ﻿using SchoolOfRobotics.Application.Abstractions.CommandComponents;
 using SchoolOfRobotics.Application.Abstractions.Repositories;
 using SchoolOfRobotics.Application.Abstractions.Services;
-using SchoolOfRobotics.Domain.Courses.Aggregates;
-using SchoolOfRobotics.Domain.Courses.ValueObjects;
+using SchoolOfRobotics.Domain.Courses;
 using SchoolOfRobotics.Domain.Errors;
 using SchoolOfRobotics.Domain.Primitives.Results;
 

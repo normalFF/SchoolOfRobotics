@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolOfRobotics.Domain.Childrens.Aggregates;
-using SchoolOfRobotics.Domain.Courses.Aggregates;
+using SchoolOfRobotics.Domain.Courses;
 using SchoolOfRobotics.Domain.Groups;
 using SchoolOfRobotics.Domain.Users;
 

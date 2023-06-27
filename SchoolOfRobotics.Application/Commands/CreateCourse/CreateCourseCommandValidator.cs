@@ -1,9 +1,9 @@
 ﻿using FluentValidation;
-using SchoolOfRobotics.Domain.Courses.ValueObjects;
+using SchoolOfRobotics.Domain.Courses;
 
 namespace SchoolOfRobotics.Application.Commands.CreateCourse
 {
-	public class CreateCourseCommandValidator : AbstractValidator<CreateCourseCommand>
+    public class CreateCourseCommandValidator : AbstractValidator<CreateCourseCommand>
 	{
 		public CreateCourseCommandValidator()
 		{

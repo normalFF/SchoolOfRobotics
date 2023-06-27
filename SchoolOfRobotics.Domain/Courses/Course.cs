@@ -1,10 +1,9 @@
-using SchoolOfRobotics.Domain.Courses.ValueObjects;
 using SchoolOfRobotics.Domain.Enums;
 using SchoolOfRobotics.Domain.Identificators;
 using SchoolOfRobotics.Domain.Primitives;
 using SchoolOfRobotics.Domain.Primitives.Results;
 
-namespace SchoolOfRobotics.Domain.Courses.Aggregates;
+namespace SchoolOfRobotics.Domain.Courses;
 
 public class Course : AggregateRoot<CourseId>
 {
@@ -13,20 +12,20 @@ public class Course : AggregateRoot<CourseId>
     public CourseDescription Description { get; private set; }
 
 
-    #pragma warning disable CS8618
-	private Course(CourseId id)
-		: base(id)
+#pragma warning disable CS8618
+    private Course(CourseId id)
+        : base(id)
     {
     }
-    #pragma warning restore CS8618
+#pragma warning restore CS8618
 
-	private Course(CourseId id, CourseName name, CourseDescription description, CourseStatusEnum status)
-		: base(id)
-	{
+    private Course(CourseId id, CourseName name, CourseDescription description, CourseStatusEnum status)
+        : base(id)
+    {
         Name = name;
         Description = description;
         Status = status;
-	}
+    }
 
     public static Result<Course> Create(string name, string description)
     {
@@ -41,10 +40,10 @@ public class Course : AggregateRoot<CourseId>
         }
     }
 
-	public void ReplaseStatus(CourseStatusEnum newStatus)
+    public void ReplaseStatus(CourseStatusEnum newStatus)
     {
         Status = newStatus;
-	}
+    }
 
     public Result ReplaseName(string name)
     {

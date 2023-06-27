@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SchoolOfRobotics.Domain.Courses.Aggregates;
+using SchoolOfRobotics.Domain.Courses;
 using SchoolOfRobotics.Domain.CoursesTeachers;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations;
