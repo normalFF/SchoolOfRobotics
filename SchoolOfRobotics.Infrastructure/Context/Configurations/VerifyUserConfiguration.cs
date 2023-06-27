@@ -2,8 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.Identificators;
 using SchoolOfRobotics.Domain.Users;
-using SchoolOfRobotics.Domain.UserVerify.Aggregates;
-using SchoolOfRobotics.Domain.UserVerify.ValueObjects;
+using SchoolOfRobotics.Domain.UserVerify;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
