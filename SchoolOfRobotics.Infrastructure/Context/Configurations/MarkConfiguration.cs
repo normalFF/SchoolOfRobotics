@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.Attendances.Entities;
 using SchoolOfRobotics.Domain.CoursesGroups.Entities;
 using SchoolOfRobotics.Domain.Enums;
-using SchoolOfRobotics.Domain.GroupLessons.Entities;
+using SchoolOfRobotics.Domain.GroupLessons;
 using SchoolOfRobotics.Domain.Groups;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations

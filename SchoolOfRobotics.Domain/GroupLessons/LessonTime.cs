@@ -1,7 +1,7 @@
 ﻿using SchoolOfRobotics.Domain.Primitives;
 using SchoolOfRobotics.Domain.Primitives.Results;
 
-namespace SchoolOfRobotics.Domain.GroupLessons.ValueObjects
+namespace SchoolOfRobotics.Domain.GroupLessons
 {
     public class LessonTime : ValueObject
     {

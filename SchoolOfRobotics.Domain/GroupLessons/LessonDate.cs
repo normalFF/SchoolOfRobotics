@@ -1,12 +1,11 @@
 ﻿using SchoolOfRobotics.Domain.Enums;
-using SchoolOfRobotics.Domain.GroupLessons.ValueObjects;
 using SchoolOfRobotics.Domain.Identificators;
 using SchoolOfRobotics.Domain.Primitives;
 using SchoolOfRobotics.Domain.Primitives.Results;
 
-namespace SchoolOfRobotics.Domain.GroupLessons.Entities
+namespace SchoolOfRobotics.Domain.GroupLessons
 {
-	public class LessonDate : Entity<LessonId>
+    public class LessonDate : Entity<LessonId>
     {
         public GroupId GroupId { get; private set; }
         public LessonStatusEnum Status { get; private set; }
@@ -14,12 +13,12 @@ namespace SchoolOfRobotics.Domain.GroupLessons.Entities
         public TeacherId? TeacherId { get; private set; }
 
 
-        #pragma warning disable CS8618
+#pragma warning disable CS8618
         private LessonDate(LessonId id)
             : base(id)
         {
         }
-        #pragma warning restore CS8618
+#pragma warning restore CS8618
 
 
         private LessonDate(LessonId id, GroupId groupId, LessonStatusEnum status, LessonTime time)
@@ -66,7 +65,7 @@ namespace SchoolOfRobotics.Domain.GroupLessons.Entities
             }
         }
 
-		internal Result SetStatus(LessonStatusEnum status)
+        internal Result SetStatus(LessonStatusEnum status)
         {
             if (status == LessonStatusEnum.Done
                 && DateTime.Now > Time.BeginDate

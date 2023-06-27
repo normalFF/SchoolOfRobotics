@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.Enums;
-using SchoolOfRobotics.Domain.GroupLessons.Entities;
+using SchoolOfRobotics.Domain.GroupLessons;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class LessonDateConfiguration : IEntityTypeConfiguration<LessonDate>
+    internal class LessonDateConfiguration : IEntityTypeConfiguration<LessonDate>
 	{
 		public void Configure(EntityTypeBuilder<LessonDate> builder)
 		{
