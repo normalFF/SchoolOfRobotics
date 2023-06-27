@@ -10,4 +10,10 @@
     <PackageReference Include="MediatR" Version="12.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Users\Aggregates\" />
+    <Folder Include="Users\Events\" />
+    <Folder Include="Users\ValueObjects\" />
+  </ItemGroup>
+
 </Project>

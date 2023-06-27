@@ -1,7 +1,7 @@
 ﻿using SchoolOfRobotics.Domain.Primitives;
 using SchoolOfRobotics.Domain.Primitives.Results;
 
-namespace SchoolOfRobotics.Domain.Users.ValueObjects
+namespace SchoolOfRobotics.Domain.Users
 {
     public class Password : ValueObject
     {
@@ -17,7 +17,7 @@ namespace SchoolOfRobotics.Domain.Users.ValueObjects
 
         public static Result<Password> Create(byte[] password)
         {
-            if (password is null || password.Length != HashLength) return Primitives.Results.Error.Failure(string.Empty, string.Empty);
+            if (password is null || password.Length != HashLength) return Error.Failure(string.Empty, string.Empty);
             else return new Password(password);
         }
 

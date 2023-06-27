@@ -3,8 +3,8 @@ using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
 using SchoolOfRobotics.Application.Abstractions.Services;
 using Microsoft.IdentityModel.Tokens;
-using SchoolOfRobotics.Domain.Users.Aggregates;
 using Microsoft.Extensions.Options;
+using SchoolOfRobotics.Domain.Users;
 
 namespace SchoolOfRobotics.Infrastructure.Authentication;
 

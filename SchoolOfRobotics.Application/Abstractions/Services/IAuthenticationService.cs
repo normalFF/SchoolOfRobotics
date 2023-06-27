@@ -1,5 +1,5 @@
 ﻿using SchoolOfRobotics.Domain.Identificators;
-using SchoolOfRobotics.Domain.Users.Aggregates;
+using SchoolOfRobotics.Domain.Users;
 
 namespace SchoolOfRobotics.Application.Abstractions.Services
 {

@@ -2,7 +2,7 @@
 using SchoolOfRobotics.Domain.Identificators;
 using SchoolOfRobotics.Domain.Primitives;
 using SchoolOfRobotics.Domain.Primitives.Results;
-using SchoolOfRobotics.Domain.Users.Aggregates;
+using SchoolOfRobotics.Domain.Users;
 using SchoolOfRobotics.Domain.UserVerify.ValueObjects;
 
 namespace SchoolOfRobotics.Domain.UserVerify.Aggregates

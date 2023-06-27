@@ -1,10 +1,9 @@
 ﻿using SchoolOfRobotics.Domain.Identificators;
-using SchoolOfRobotics.Domain.Users.Aggregates;
-using SchoolOfRobotics.Domain.Users.ValueObjects;
+using SchoolOfRobotics.Domain.Users;
 
 namespace SchoolOfRobotics.Application.Abstractions.Repositories
 {
-	public interface IUserRepository
+    public interface IUserRepository
 	{
 		Task<User?> GetUserByIdAsync(UserId id, CancellationToken cancellationToken);
 

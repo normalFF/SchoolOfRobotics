@@ -28,7 +28,7 @@ public class News : AggregateRoot<NewsId>
 	#pragma warning restore CS8618
 
 
-	internal Result<News> Create(string name, string description)
+	internal static Result<News> Create(string name, string description)
 	{
 		var newDescription = NewsDescription.Create(description);
 		var newName = NewsName.Create(name);

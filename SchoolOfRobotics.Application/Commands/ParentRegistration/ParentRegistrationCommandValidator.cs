@@ -1,9 +1,9 @@
 ﻿using FluentValidation;
-using SchoolOfRobotics.Domain.Users.ValueObjects;
+using SchoolOfRobotics.Domain.Users;
 
 namespace SchoolOfRobotics.Application.Commands.ParentRegistration
 {
-	public class ParentRegistrationCommandValidator : AbstractValidator<ParentRegistrationCommand>
+    public class ParentRegistrationCommandValidator : AbstractValidator<ParentRegistrationCommand>
 	{
 		public ParentRegistrationCommandValidator() 
 		{

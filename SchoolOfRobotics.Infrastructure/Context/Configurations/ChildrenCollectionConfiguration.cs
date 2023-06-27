@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.Childrens.Aggregates;
 using SchoolOfRobotics.Domain.Enums;
 using SchoolOfRobotics.Domain.Identificators;
-using SchoolOfRobotics.Domain.Users.Aggregates;
+using SchoolOfRobotics.Domain.Users;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class ChildrenCollectionConfiguration : IEntityTypeConfiguration<ChildrenCollection>
+    internal class ChildrenCollectionConfiguration : IEntityTypeConfiguration<ChildrenCollection>
 	{
 		public void Configure(EntityTypeBuilder<ChildrenCollection> builder)
 		{

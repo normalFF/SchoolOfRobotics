@@ -2,12 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.Identificators;
-using SchoolOfRobotics.Domain.Users.Aggregates;
-using SchoolOfRobotics.Domain.Users.ValueObjects;
+using SchoolOfRobotics.Domain.Users;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class UserConfiguration : IEntityTypeConfiguration<User>
+    internal class UserConfiguration : IEntityTypeConfiguration<User>
 	{
 		public void Configure(EntityTypeBuilder<User> builder)  
 		{

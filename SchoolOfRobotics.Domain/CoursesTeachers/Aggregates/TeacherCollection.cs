@@ -3,7 +3,7 @@ using SchoolOfRobotics.Domain.Enums;
 using SchoolOfRobotics.Domain.Identificators;
 using SchoolOfRobotics.Domain.Primitives;
 using SchoolOfRobotics.Domain.Primitives.Results;
-using SchoolOfRobotics.Domain.Users.Aggregates;
+using SchoolOfRobotics.Domain.Users;
 
 namespace SchoolOfRobotics.Domain.CoursesTeachers.Aggregates;
 

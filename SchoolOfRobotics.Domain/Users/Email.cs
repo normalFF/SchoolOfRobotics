@@ -1,7 +1,7 @@
 ﻿using SchoolOfRobotics.Domain.Primitives.Results;
 using SchoolOfRobotics.Domain.Primitives;
 
-namespace SchoolOfRobotics.Domain.Users.ValueObjects
+namespace SchoolOfRobotics.Domain.Users
 {
     public class Email : ValueObject
     {

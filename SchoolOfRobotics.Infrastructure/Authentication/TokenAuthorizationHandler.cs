@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
 using SchoolOfRobotics.Application.Abstractions.Services;
-using SchoolOfRobotics.Domain.Users.Aggregates;
+using SchoolOfRobotics.Domain.Users;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace SchoolOfRobotics.Infrastructure.Authentication;

@@ -1,11 +1,9 @@
 using SchoolOfRobotics.Domain.Primitives.Results;
 using SchoolOfRobotics.Domain.Primitives;
-using SchoolOfRobotics.Domain.Users.Events;
-using SchoolOfRobotics.Domain.Users.ValueObjects;
 using SchoolOfRobotics.Domain.Enums;
 using SchoolOfRobotics.Domain.Identificators;
 
-namespace SchoolOfRobotics.Domain.Users.Aggregates;
+namespace SchoolOfRobotics.Domain.Users;
 
 public class User : AggregateRoot<UserId>
 {
@@ -25,12 +23,12 @@ public class User : AggregateRoot<UserId>
         Role = role;
     }
 
-    #pragma warning disable CS8618
-	private User(UserId id)
-	    : base(id)
-	{
-	}
-    #pragma warning restore CS8618
+#pragma warning disable CS8618
+    private User(UserId id)
+        : base(id)
+    {
+    }
+#pragma warning restore CS8618
 
 
     public static Result<User> CreateParent(string firstName, string lastName, string patronymic, string email, byte[] password)
@@ -47,18 +45,18 @@ public class User : AggregateRoot<UserId>
 
     private static Result<User> CreateUser(string firstName, string lastName, string patronymic, string email, byte[] password, UserRoleEnum role)
     {
-		var userName = FullName.Create(firstName, lastName, patronymic);
-		var userEmail = Email.Create(email);
-		var userPassword = Password.Create(password);
+        var userName = FullName.Create(firstName, lastName, patronymic);
+        var userEmail = Email.Create(email);
+        var userPassword = Password.Create(password);
 
-		if (userName.IsFailure) return userName.Error;
-		else if (userEmail.IsFailure) return userEmail.Error;
-		else if (userPassword.IsFailure) return userPassword.Error;
-		else
-		{
+        if (userName.IsFailure) return userName.Error;
+        else if (userEmail.IsFailure) return userEmail.Error;
+        else if (userPassword.IsFailure) return userPassword.Error;
+        else
+        {
             return new User(new UserId(Guid.NewGuid()), userName.Value, userEmail.Value, userPassword.Value, DateTime.UtcNow, role);
-		}
-	}
+        }
+    }
 
 
     public void ReplacePassword(Password newPassword)

@@ -1,8 +1,8 @@
 ﻿using MediatR;
 using SchoolOfRobotics.Application.Abstractions.Repositories;
 using SchoolOfRobotics.Application.Abstractions.Services;
-using SchoolOfRobotics.Domain.Users.Events;
 using SchoolOfRobotics.Domain.Enums;
+using SchoolOfRobotics.Domain.Users;
 
 namespace SchoolOfRobotics.Application.Commands.ParentRegistration
 {

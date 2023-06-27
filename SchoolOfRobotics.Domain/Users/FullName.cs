@@ -1,7 +1,7 @@
 ﻿using SchoolOfRobotics.Domain.Primitives.Results;
 using SchoolOfRobotics.Domain.Primitives;
 
-namespace SchoolOfRobotics.Domain.Users.ValueObjects
+namespace SchoolOfRobotics.Domain.Users
 {
     public sealed class FullName : ValueObject
     {
@@ -13,7 +13,7 @@ namespace SchoolOfRobotics.Domain.Users.ValueObjects
         public string LastName { get; private set; }
         public string Patronymic { get; private set; }
 
-		private FullName(string firstName, string lastName, string patronymic)
+        private FullName(string firstName, string lastName, string patronymic)
         {
             FirstName = firstName;
             LastName = lastName;

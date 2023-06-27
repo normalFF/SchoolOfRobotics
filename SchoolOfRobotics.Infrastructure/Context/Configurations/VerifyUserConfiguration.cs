@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.Identificators;
-using SchoolOfRobotics.Domain.Users.Aggregates;
+using SchoolOfRobotics.Domain.Users;
 using SchoolOfRobotics.Domain.UserVerify.Aggregates;
 using SchoolOfRobotics.Domain.UserVerify.ValueObjects;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class VerifyUserConfiguration : IEntityTypeConfiguration<VerifyUser>
+    internal class VerifyUserConfiguration : IEntityTypeConfiguration<VerifyUser>
 	{
 		public void Configure(EntityTypeBuilder<VerifyUser> builder)
 		{

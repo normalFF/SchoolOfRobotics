@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using SchoolOfRobotics.Domain.Users.ValueObjects;
+using SchoolOfRobotics.Domain.Users;
 
 namespace SchoolOfRobotics.Application.Commands.TeacherRegistration;
 

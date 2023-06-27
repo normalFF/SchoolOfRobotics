@@ -2,9 +2,8 @@
 using SchoolOfRobotics.Application.Abstractions.Repositories;
 using SchoolOfRobotics.Application.Abstractions.Services;
 using SchoolOfRobotics.Domain.Primitives.Results;
-using SchoolOfRobotics.Domain.Users.Aggregates;
-using SchoolOfRobotics.Domain.Users.ValueObjects;
 using SchoolOfRobotics.Domain.Errors;
+using SchoolOfRobotics.Domain.Users;
 
 namespace SchoolOfRobotics.Application.Commands.TeacherRegistration;
 
