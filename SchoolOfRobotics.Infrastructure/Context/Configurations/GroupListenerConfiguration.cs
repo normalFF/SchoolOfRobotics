@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SchoolOfRobotics.Domain.CoursesGroups.Entities;
+using SchoolOfRobotics.Domain.CoursesGroups;
 using SchoolOfRobotics.Domain.Enums;
 using SchoolOfRobotics.Domain.Groups;
 

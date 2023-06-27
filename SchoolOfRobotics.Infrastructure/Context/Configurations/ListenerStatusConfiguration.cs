@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.Attendances.Entities;
-using SchoolOfRobotics.Domain.CoursesGroups.Entities;
+using SchoolOfRobotics.Domain.CoursesGroups;
 using SchoolOfRobotics.Domain.Enums;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class ListenerStatusConfiguration : IEntityTypeConfiguration<ListenerStatus>
+    internal class ListenerStatusConfiguration : IEntityTypeConfiguration<ListenerStatus>
 	{
 		public void Configure(EntityTypeBuilder<ListenerStatus> builder)
 		{

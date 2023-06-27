@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.Courses.Aggregates;
-using SchoolOfRobotics.Domain.CoursesGroups.Aggregates;
+using SchoolOfRobotics.Domain.CoursesGroups;
 using SchoolOfRobotics.Domain.Enums;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class CourseGroupsConfiguration : IEntityTypeConfiguration<CourseGroups>
+    internal class CourseGroupsConfiguration : IEntityTypeConfiguration<CourseGroups>
 	{
 		public void Configure(EntityTypeBuilder<CourseGroups> builder)
 		{
