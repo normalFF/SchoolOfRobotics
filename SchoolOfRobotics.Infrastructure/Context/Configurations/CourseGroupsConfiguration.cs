@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.Courses.Aggregates;
 using SchoolOfRobotics.Domain.CoursesGroups.Aggregates;
 using SchoolOfRobotics.Domain.Enums;
-using SchoolOfRobotics.Domain.Groups.Aggregates;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {

@@ -2,11 +2,11 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.CoursesGroups.Entities;
 using SchoolOfRobotics.Domain.Enums;
-using SchoolOfRobotics.Domain.Groups.Aggregates;
+using SchoolOfRobotics.Domain.Groups;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class GroupListenerConfiguration : IEntityTypeConfiguration<GroupListener>
+    internal class GroupListenerConfiguration : IEntityTypeConfiguration<GroupListener>
 	{
 		public void Configure(EntityTypeBuilder<GroupListener> builder)
 		{

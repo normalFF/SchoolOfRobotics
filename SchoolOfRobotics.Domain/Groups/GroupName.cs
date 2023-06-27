@@ -1,7 +1,7 @@
 ﻿using SchoolOfRobotics.Domain.Primitives.Results;
 using SchoolOfRobotics.Domain.Primitives;
 
-namespace SchoolOfRobotics.Domain.Groups.ValueObjects
+namespace SchoolOfRobotics.Domain.Groups
 {
     public class GroupName : ValueObject
     {

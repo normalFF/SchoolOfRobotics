@@ -2,11 +2,11 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.Attendances.Aggregates;
 using SchoolOfRobotics.Domain.Enums;
-using SchoolOfRobotics.Domain.Groups.Aggregates;
+using SchoolOfRobotics.Domain.Groups;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class AttendanceConfiguration : IEntityTypeConfiguration<Attendance>
+    internal class AttendanceConfiguration : IEntityTypeConfiguration<Attendance>
 	{
 		public void Configure(EntityTypeBuilder<Attendance> builder)
 		{

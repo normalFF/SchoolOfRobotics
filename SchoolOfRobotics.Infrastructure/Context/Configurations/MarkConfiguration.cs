@@ -4,11 +4,11 @@ using SchoolOfRobotics.Domain.Attendances.Entities;
 using SchoolOfRobotics.Domain.CoursesGroups.Entities;
 using SchoolOfRobotics.Domain.Enums;
 using SchoolOfRobotics.Domain.GroupLessons.Entities;
-using SchoolOfRobotics.Domain.Groups.Aggregates;
+using SchoolOfRobotics.Domain.Groups;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class MarkConfiguration : IEntityTypeConfiguration<Mark>
+    internal class MarkConfiguration : IEntityTypeConfiguration<Mark>
 	{
 		public void Configure(EntityTypeBuilder<Mark> builder)
 		{

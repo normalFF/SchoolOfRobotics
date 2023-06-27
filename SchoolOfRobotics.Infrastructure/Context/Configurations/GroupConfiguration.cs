@@ -1,12 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.Enums;
-using SchoolOfRobotics.Domain.Groups.Aggregates;
-using SchoolOfRobotics.Domain.Groups.ValueObjects;
+using SchoolOfRobotics.Domain.Groups;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class GroupConfiguration : IEntityTypeConfiguration<Group>
+    internal class GroupConfiguration : IEntityTypeConfiguration<Group>
 	{
 		public void Configure(EntityTypeBuilder<Group> builder)
 		{

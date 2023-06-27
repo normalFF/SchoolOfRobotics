@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using SchoolOfRobotics.Domain.Groups.ValueObjects;
+using SchoolOfRobotics.Domain.Groups;
 
 namespace SchoolOfRobotics.Application.Commands.CreateGroup;
 

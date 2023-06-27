@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolOfRobotics.Domain.Childrens.Aggregates;
 using SchoolOfRobotics.Domain.Courses.Aggregates;
-using SchoolOfRobotics.Domain.Groups.Aggregates;
+using SchoolOfRobotics.Domain.Groups;
 using SchoolOfRobotics.Domain.Users;
 
 namespace SchoolOfRobotics.Infrastructure.Context

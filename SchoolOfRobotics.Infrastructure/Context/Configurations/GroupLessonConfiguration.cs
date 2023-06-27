@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SchoolOfRobotics.Domain.GroupLessons.Aggregates;
-using SchoolOfRobotics.Domain.Groups.Aggregates;
+using SchoolOfRobotics.Domain.Groups;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class GroupLessonConfiguration : IEntityTypeConfiguration<GroupLesson>
+    internal class GroupLessonConfiguration : IEntityTypeConfiguration<GroupLesson>
 	{
 		public void Configure(EntityTypeBuilder<GroupLesson> builder)
 		{

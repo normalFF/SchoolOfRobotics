@@ -2,7 +2,7 @@
 using SchoolOfRobotics.Application.Abstractions.Repositories;
 using SchoolOfRobotics.Application.Abstractions.Services;
 using SchoolOfRobotics.Domain.Errors;
-using SchoolOfRobotics.Domain.Groups.Aggregates;
+using SchoolOfRobotics.Domain.Groups;
 using SchoolOfRobotics.Domain.Identificators;
 using SchoolOfRobotics.Domain.Primitives.Results;
 
