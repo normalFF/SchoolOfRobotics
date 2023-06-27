@@ -1,7 +1,7 @@
 ﻿using SchoolOfRobotics.Domain.Primitives.Results;
 using SchoolOfRobotics.Domain.Primitives;
 
-namespace SchoolOfRobotics.Domain.Childrens.ValueObjects
+namespace SchoolOfRobotics.Domain.Childrens
 {
     public class Name : ValueObject
     {
@@ -17,7 +17,7 @@ namespace SchoolOfRobotics.Domain.Childrens.ValueObjects
             LastName = lastName;
         }
 
-		public static Result<Name> Create(string firstName, string lastName)
+        public static Result<Name> Create(string firstName, string lastName)
         {
             if (string.IsNullOrWhiteSpace(firstName)) return Errors.Errors.Children.EmptyFirstName;
             else if (firstName.Length > FirstNameMaxLength) return Errors.Errors.Children.MaxLengthFirstName(FirstNameMaxLength);

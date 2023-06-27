@@ -1,4 +1,4 @@
-﻿using SchoolOfRobotics.Domain.Childrens.Entities;
+﻿using SchoolOfRobotics.Domain.Childrens;
 
 namespace SchoolOfRobotics.Application.Queries.GetChildrensByUserId;
 

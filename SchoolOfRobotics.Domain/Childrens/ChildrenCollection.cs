@@ -1,28 +1,26 @@
 ﻿using SchoolOfRobotics.Domain.Primitives.Results;
-using SchoolOfRobotics.Domain.Childrens.Entities;
-using SchoolOfRobotics.Domain.Childrens.ValueObjects;
 using SchoolOfRobotics.Domain.Primitives;
 using SchoolOfRobotics.Domain.Enums;
 using SchoolOfRobotics.Domain.Identificators;
 
-namespace SchoolOfRobotics.Domain.Childrens.Aggregates
+namespace SchoolOfRobotics.Domain.Childrens
 {
     public sealed class ChildrenCollection : AggregateRoot<UserId>
-	{
+    {
         private readonly List<Children> _childrens;
 
         public UserRoleEnum Role { get; private set; }
         public IReadOnlyCollection<Children> Childrens => _childrens.AsReadOnly();
 
-        
-        #pragma warning disable CS8618
-		private ChildrenCollection(UserId id)
-			: base(id)
+
+#pragma warning disable CS8618
+        private ChildrenCollection(UserId id)
+            : base(id)
         {
         }
-        #pragma warning restore CS8618
+#pragma warning restore CS8618
 
-		private ChildrenCollection(UserId id, UserRoleEnum role)
+        private ChildrenCollection(UserId id, UserRoleEnum role)
             : base(id)
         {
             Role = role;
@@ -38,7 +36,7 @@ namespace SchoolOfRobotics.Domain.Childrens.Aggregates
                 Childrens.Where(i => i.Id == childrenId).First().ReplaceName(newName);
                 return Result.Success();
             }
-		}
+        }
 
         public Result AddNewChildren(Name name, DateOfBirth dateOfBirth, ClassNumberEnum classNumber)
         {
@@ -49,6 +47,6 @@ namespace SchoolOfRobotics.Domain.Childrens.Aggregates
                 _childrens.Add(new Children(new ChildrenId(Guid.NewGuid()), Id, name, dateOfBirth, classNumber));
                 return Result.Success();
             }
-		}
-	}
+        }
+    }
 }

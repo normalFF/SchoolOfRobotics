@@ -5,7 +5,7 @@ using SchoolOfRobotics.Domain.Errors;
 using SchoolOfRobotics.Domain.Identificators;
 using SchoolOfRobotics.Domain.Enums;
 using SchoolOfRobotics.Application.Abstractions.Repositories;
-using SchoolOfRobotics.Domain.Childrens.Entities;
+using SchoolOfRobotics.Domain.Childrens;
 
 namespace SchoolOfRobotics.Application.Queries.GetChildrensByUserId;
 

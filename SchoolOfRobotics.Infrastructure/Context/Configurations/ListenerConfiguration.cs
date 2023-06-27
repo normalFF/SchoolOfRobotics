@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.Extensions.DependencyInjection;
-using SchoolOfRobotics.Domain.Childrens.Entities;
+using SchoolOfRobotics.Domain.Childrens;
 using SchoolOfRobotics.Domain.CoursesGroups;
 using SchoolOfRobotics.Domain.Enums;
 

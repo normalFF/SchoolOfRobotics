@@ -1,4 +1,4 @@
-﻿using SchoolOfRobotics.Domain.Childrens.Aggregates;
+﻿using SchoolOfRobotics.Domain.Childrens;
 using SchoolOfRobotics.Domain.Identificators;
 
 namespace SchoolOfRobotics.Application.Abstractions.Repositories;

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SchoolOfRobotics.Domain.Childrens.Aggregates;
+using SchoolOfRobotics.Domain.Childrens;
 using SchoolOfRobotics.Domain.Enums;
 using SchoolOfRobotics.Domain.Identificators;
 using SchoolOfRobotics.Domain.Users;

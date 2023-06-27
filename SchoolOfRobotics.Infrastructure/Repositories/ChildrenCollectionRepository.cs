@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolOfRobotics.Application.Abstractions.Repositories;
-using SchoolOfRobotics.Domain.Childrens.Aggregates;
+using SchoolOfRobotics.Domain.Childrens;
 using SchoolOfRobotics.Domain.Identificators;
 using SchoolOfRobotics.Infrastructure.Context;
 

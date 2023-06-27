@@ -1,12 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SchoolOfRobotics.Domain.Childrens.Entities;
-using SchoolOfRobotics.Domain.Childrens.ValueObjects;
+using SchoolOfRobotics.Domain.Childrens;
 using SchoolOfRobotics.Domain.Enums;
 
 namespace SchoolOfRobotics.Infrastructure.Context.Configurations
 {
-	internal class ChildrenConfiguration : IEntityTypeConfiguration<Children>
+    internal class ChildrenConfiguration : IEntityTypeConfiguration<Children>
 	{
 		public void Configure(EntityTypeBuilder<Children> builder)
 		{

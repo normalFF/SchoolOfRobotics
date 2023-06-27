@@ -1,4 +1,4 @@
-﻿using SchoolOfRobotics.Domain.Childrens.Entities;
+﻿using SchoolOfRobotics.Domain.Childrens;
 using SchoolOfRobotics.Domain.Enums;
 using SchoolOfRobotics.Domain.Identificators;
 using SchoolOfRobotics.Domain.Primitives;

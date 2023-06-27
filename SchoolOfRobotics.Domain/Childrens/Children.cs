@@ -1,9 +1,8 @@
-using SchoolOfRobotics.Domain.Childrens.ValueObjects;
 using SchoolOfRobotics.Domain.Enums;
 using SchoolOfRobotics.Domain.Identificators;
 using SchoolOfRobotics.Domain.Primitives;
 
-namespace SchoolOfRobotics.Domain.Childrens.Entities;
+namespace SchoolOfRobotics.Domain.Childrens;
 
 public class Children : Entity<ChildrenId>
 {
@@ -21,14 +20,14 @@ public class Children : Entity<ChildrenId>
         ClassNumber = classNumber;
     }
 
-    #pragma warning disable CS8618
-	private Children(ChildrenId id)
-		: base(id)
+#pragma warning disable CS8618
+    private Children(ChildrenId id)
+        : base(id)
     {
     }
-    #pragma warning restore CS8618
+#pragma warning restore CS8618
 
-	internal void ReplaceName(Name newName)
+    internal void ReplaceName(Name newName)
     {
         Name = newName;
     }
