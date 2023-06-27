@@ -1,5 +1,5 @@
 ﻿using SchoolOfRobotics.Domain.Attendances.Entities;
-using SchoolOfRobotics.Domain.CoursesTeachers.Entities;
+using SchoolOfRobotics.Domain.CoursesTeachers;
 using SchoolOfRobotics.Domain.Enums;
 using SchoolOfRobotics.Domain.GroupLessons;
 using SchoolOfRobotics.Domain.Identificators;
